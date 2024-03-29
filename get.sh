@@ -6,4 +6,4 @@ path="${1}"
 
 queries="${2}"
 
-curl -sL "https://api.unsplash.com/${path}?${queries}&client_id=${ACCESS_KEY}"
+curl -sL -H "Authorization: Client-ID ${ACCESS_KEY}" "https://api.unsplash.com/${path}?${queries}"
